@@ -56,39 +56,3 @@ $xml = Import-Clixml -Path "C:\Users\stepa\Desktop\ExtAttr\xml1.xml" # Полу�
               $HostInfo.Cells.Item($Row+$itr,$Col+5) = $xml[$HostName].Item(4) # Пишу в ячейку extensionAttribute2
               $itr++
             }
-<#
-        $itr = 1
-          foreach($UserName in $xml.Values.Item(0))        # Получаю все значения паролей в массиве
-            { 
-              $HostInfo.Cells.Item($Row+$itr,$Col+1) = $UserName   # Пишу в ячейку имя юзера                                          
-              $itr++
-            } 
-
-        $itr = 1
-          foreach($UserCN in $xml.Values.Item(1))        # Получаю все значения даты и времени истекания пароля
-            { 
-              $HostInfo.Cells.Item($Row+$itr,$Col+2) = $UserCN # Пишу в ячейку дату и время
-              $itr++
-            }
-
-        $itr = 1
-          foreach($PrimaryUser in $xml.Values.Item(2))        # Получаю все значения PrimaryUser
-            { 
-              $HostInfo.Cells.Item($Row+$itr,$Col+3) = $PrimaryUser # Пишу в PrimaryUserName
-              $itr++
-            }
-
-        $itr = 1
-          foreach($extensionAttribute1 in $xml.Values.Item(3))        # Получаю все значения даты и времени истекания пароля
-            { 
-              $HostInfo.Cells.Item($Row+$itr,$Col+4) = $extensionAttribute1  # Пишу в ячейку extensionAttribute1
-              $itr++
-            }
-
-        $itr = 1
-          foreach($extensionAttribute2 in $xml.Values.Item(4))        # Получаю все значения даты и времени истекания пароля
-            { 
-              $HostInfo.Cells.Item($Row+$itr,$Col+5) = $extensionAttribute2  # Пишу в ячейку extensionAttribute2
-              $itr++
-            }
-#>
