@@ -1,4 +1,5 @@
 chcp 65001
+$PCHash = @{} #! HashTable for storing info about PC/User pair
 
 $MainOU = #! Path to OU where computers stored 
 $UsersOU = #! Path to OU where users stored 
